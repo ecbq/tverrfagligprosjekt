@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrer</title>
+    <link rel="stylesheet" href="pålogging.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registrer deg</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="email">E-post</label>
+                <input type="email" id="email" placeholder="Skriv inn e-posten din" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Passord</label>
+                <input type="password" id="password" placeholder="Skriv inn passordet ditt" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Bekreft passord</label>
+                <input type="password" id="confirm-password" placeholder="Bekreft passordet ditt" required>
+            </div>
+            <button type="submit" class="register-button">Registrer deg</button>
+        </form>
+        <p class="login-link">Allerede en bruker? <a href="pålogging.html">Logg inn her</a>.</p>
+    </div>
+    <script>
+        const form = document.getElementById('registration-form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                alert('Passordene stemmer ikke overens. Prøv igjen.');
+                return;
+            }
+
+            window.location.href = 'pålogging.html';
+        });
+    </script>
+</body>
+</html>

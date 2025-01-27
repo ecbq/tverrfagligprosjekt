@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forstå Internett</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Logg Inn/Registrer</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav class="top-bar" id="navbar">
-            <h1>Forstå Internett</h1>
-            <div class="buttons">
-                <button class="btn-login">Logg på</button>
-                <button class="btn-register">Registrer deg</button>
-            </div>
-        </nav>
-        <p>En enkel forklaring på hvordan internett fungerer.</p>
-    </header>
-    <main>
-        <section id="oppbygning">
-            <h2>Internettets Oppbygning</h2>
-            <p>Internett er bygget opp av kabler, servere og nettverk. IP-adresser og DNS gjør det mulig for enheter å kommunisere med hverandre.</p>
-        </section>
-
-        <section id="kommunikasjon">
-            <h2>Kommunikasjon</h2>
-            <p>Ved hjelp av klient-server-modellen sender datamaskiner forespørsler til servere, som svarer med data. Dette muliggjøres av protokoller som HTTP og TCP/IP.</p>
-        </section>
-
-        <section id="lagring">
-            <h2>Lagring</h2>
-            <p>Data lagres på servere i datasentre eller i skyen gjennom tjenester som Google Drive. Datasikkerhet og backup beskytter disse dataene.</p>
-        </section>
-
-        <section id="nyhetsbrev">
-            <h2>Nyhetsbrev</h2>
-            <form id="nyhetsbrev-form">
-                <label for="email">Registrer deg for vårt nyhetsbrev:</label>
-                <input type="email" id="email" name="email" placeholder="Din e-postadresse" required>
-                <button type="submit">Registrer</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Forstå Internett. Alle rettigheter reservert.</p>
-    </footer>
-    <script src="script.js"></script>
+    <div class="top-bar">
+        <button id="register-button">Registrer deg</button>
+        <button id="auth-button">Logg inn</button>
+    </div>
+    <div class="content">
+        <h1>Velkommen til nettsiden!</h1>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
